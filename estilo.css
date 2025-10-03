@@ -37,6 +37,10 @@ main {
     font-family: 'Times New Roman', Times, serif;
 }
 
+button {
+    margin: 5px 0;
+}
+
 .subtitulos {
     margin: 10px 0;
 }
