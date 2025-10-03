@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -15,25 +17,62 @@
         </nav>
     </header>
 <main>
-    <h2 class="titulos">Página inicial</h2>
-    <section class="imagens">
-        <h3 class="subtitulos">Sites</h3>
-        <a href="https://www.nike.com.br" target="_blank">
-            <img src="./img/Logo-Nike-Png.png" alt="site google">
-        </a>
-        <a href="https://www.amazon.com.br" target="_blank">
-            <img src="./img/Logo-Amazon.png" alt="site google">
-        </a>
-        <a href="https://rj.senac.br" target="_blank">
-            <img src="./img/logo-senac.png" alt="site Senac">
-        </a>
-    </section>
-
-    <section>
-        <h3 class="subtitulos">Vídeos</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/49xKMKjbBbo?si=SeJPgPt3wIdtgHiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </section>
+    <div class="container">
+        <h2 class="titulos">Página inicial</h2>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <section class="imagens">
+            <h3 class="subtitulos">Sites</h3>
+            <a href="https://www.nike.com.br" target="_blank">
+                <img src="./img/Logo-Nike-Png.png" class="img-thumbnail" alt="site google">
+            </a>
+            <a href="https://www.amazon.com.br" target="_blank">
+                <img src="./img/Logo-Amazon.png" class="img-thumbnail" alt="site google">
+            </a>
+            <a href="https://rj.senac.br" target="_blank">
+                <img src="./img/logo-senac.png" class="img-thumbnail" alt="site Senac">
+            </a>
+        </section>
+        <section class="estilo-carrosel">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./img/Logo-Amazon.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./img/Logo-Nike-Png.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./img/logo-senac.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </section>
+    
+        <section>
+            <h3 class="subtitulos">Vídeos</h3>
+            <iframe class="video" src="https://www.youtube.com/embed/49xKMKjbBbo?si=SeJPgPt3wIdtgHiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        </section>
+    </div>
 </main>
+
+<footer>
+    <h4>Rodapé</h4>
+</footer>
+
+<!-- <script src="bootstrap.min.js"></script> -->
 </body>
 </html>

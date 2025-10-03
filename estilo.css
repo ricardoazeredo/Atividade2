@@ -6,6 +6,7 @@ header {
     background-color:#02274e;
     color: #fff;
     padding: 15px;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -30,8 +31,40 @@ main {
 }
 .titulos {    
     margin: 10px 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .subtitulos {
     margin: 10px 0;
+}
+
+.video {
+    width: 580px;
+    height: 315px;
+
+}
+
+.estilo-carrosel{
+    width: 640px;
+    height:480px;
+}
+
+footer {
+    background-color:#02274e;
+    color: #fff;
+    padding: 15px;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 580px ) {
+    header {
+        width: 100vw;
+    }
+    .video {
+        width: 100vw;
+    }
 }
